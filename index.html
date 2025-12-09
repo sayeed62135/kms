@@ -1267,8 +1267,8 @@ function getPreferredTheme() {
 applyTheme(getPreferredTheme());
 
 themeToggleBtn.addEventListener('click', () => {
-    const current = root.getAttribute('data-theme') || 'light';
-    const next = current === 'light' ? 'dark' : 'light';
+    const current = root.getAttribute('data-theme') || 'dark';
+    const next = current === 'dark' ? 'light' : 'dark';
     applyTheme(next);
     localStorage.setItem(THEME_KEY, next);
 });

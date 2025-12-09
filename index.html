@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="bn" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>খিলক্ষেত মুসলিম সোসাইটি – ইয়ুথ রিভাইভাল কল</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="খিলক্ষেত মুসলিম সোসাইটির আয়োজন 'ইয়ুথ রিভাইভাল কল – ওয়ে টু জান্নাহ'। দ্বীনি আলোচনার মাধ্যমে যুবসমাজকে আদর্শ পথে ফিরিয়ে আনার একটি মানসম্মত ইসলামি ইভেন্ট।">
+    <meta name="keywords" content="খিলক্ষেত মুসলিম সোসাইটি, ইয়ুথ রিভাইভাল কল, ইসলামিক ইভেন্ট, খিলক্ষেত, ওয়ে টু জান্নাহ">
+    <meta name="author" content="খিলক্ষেত মুসলিম সোসাইটি">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="ইয়ুথ রিভাইভাল কল – ওয়ে টু জান্নাহ">
+    <meta property="og:description" content="দ্বীনি আলোচনার মাধ্যমে যুব সমাজকে আদর্শ পথে ফিরিয়ে আনার একটি বিশেষ আয়োজনে আপনাকে স্বাগতম।">
+    <meta property="og:image" content="https://khilkhetmuslimsociety.netlify.app/assets/event-poster-C4OqK96j.png">
+    <meta property="og:type" content="website">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style> 
+        /* =========================
+   1. THEME VARIABLES
+=========================*/
+:root {
+    /* Base colors (Light theme default) */
+    --primary-green: #157347;
+    --dark-green: #0b3d26;
+    --accent-gold: #d4af37;
+
+    --bg-body: #fcfcfc;
+    --bg-elevated: #ffffff;
+    --bg-soft: #f5f7f9;
+    --bg-hero-overlay: rgba(255, 255, 255, 0.6);
+    --nav-bg: rgba(255,255,255,0.94);
+    --nav-border: rgba(0,0,0,0.04);
+
+    --text-main: #1f2933;
+    --text-muted: #6c757d;
+    --text-inverse: #ffffff;
+
+    --border-subtle: rgba(15, 23, 42, 0.06);
+    --shadow-soft: 0 14px 38px rgba(15, 23, 42, 0.08);
+    --shadow-hero: 0 24px 60px rgba(15, 118, 110, 0.26);
+
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.9);
+    --glass-blur: 16px;
+
+    --badge-bg: #fef3c7;
+    --badge-text: #92400e;
+
+    --link-muted: #9ca3af;
+
+    --pattern-opacity: 0.06;
+}
+
+/* DARK THEME OVERRIDES */
+[data-theme="dark"] {
+    --bg-body: #020617;              /* almost-black navy */
+    --bg-elevated: rgba(15, 23, 42, 0.9);
+    --bg-soft: #020617;
+    --bg-hero-overlay: rgba(15, 23, 42, 0.7);
+    --nav-bg: rgba(15, 23, 42, 0.92);
+    --nav-border: rgba(148, 163, 184, 0.25);
+
+    --text-main: #e5e7eb;
+    --text-muted: #9ca3af;
+    --text-inverse: #f9fafb;
+
+    --border-subtle: rgba(148, 163, 184, 0.25);
+    --shadow-soft: 0 18px 50px rgba(0, 0, 0, 0.85);
+    --shadow-hero: 0 28px 70px rgba(15, 23, 42, 0.9);
+
+    --glass-bg: rgba(15, 23, 42, 0.78);
+    --glass-border: rgba(148, 163, 184, 0.5);
+    --glass-blur: 20px;
+
+    --badge-bg: rgba(250, 204, 21, 0.12);
+    --badge-text: #facc15;
+
+    --link-muted: #9ca3af;
+
+    --pattern-opacity: 0.08;
+}
+
+/* =========================
+   2. GLOBAL STYLES
+=========================*/
+html {
+    scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #ffc107;
+}
+body {
+    font-family: 'Hind Siliguri', sans-serif;
+    background-color: var(--bg-body);
+    background-image: radial-gradient(
+        rgba(148, 163, 184, 0.22) 1px,
+        transparent 1px
+    );
+    background-size: 22px 22px;
+    overflow-x: hidden;
+    color: var(--text-main);
+}
+
+/* =========================
+   3. NAVBAR
+=========================*/
+.navbar {
+    transition: all 0.35s ease;
+    padding: 14px 0;
+    background: var(--nav-bg);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid transparent;
+}
+.navbar.scrolled {
+    border-bottom-color: var(--nav-border);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+    padding: 10px 0;
+}
+.navbar-brand span {
+    letter-spacing: 0.02em;
+    color: var(--primary-green);
+}
+.navbar-brand small {
+    color: var(--text-muted);
+}
+.nav-link {
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-left: 15px;
+    position: relative;
+    transition: color 0.25s;
+    font-size: 0.95rem;
+}
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-green);
+}
+[data-theme="dark"] .nav-link {
+    color: #cbd5f5;
+}
+[data-theme="dark"] .nav-link:hover,
+[data-theme="dark"] .nav-link.active {
+    color: #22c55e;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: var(--primary-green);
+    transition: width 0.25s;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* THEME TOGGLE BUTTON */
+.theme-toggle-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    border: 1px solid var(--border-subtle);
+    background: linear-gradient(135deg,
+                rgba(255, 255, 255, 0.9),
+                rgba(243, 244, 246, 0.7));
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 14px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.theme-toggle-btn i {
+    font-size: 1rem;
+    color: #111827;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+[data-theme="dark"] .theme-toggle-btn {
+    background: radial-gradient(circle at 10% 0%, rgba(15,23,42,0.9), rgba(30,64,175,0.5));
+    border-color: rgba(148,163,184,0.6);
+}
+[data-theme="dark"] .theme-toggle-btn i {
+    color: #e5e7eb;
+}
+.theme-toggle-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.18);
+}
+
+/* =========================
+   4. HERO SECTION
+=========================*/
+.hero-section {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-gradient-orbit {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 0% 0%, rgba(34,197,94,0.12), transparent 55%),
+        radial-gradient(circle at 100% 100%, rgba(56,189,248,0.12), transparent 55%);
+    mix-blend-mode: soft-light;
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -160px;
+    right: -120px;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, rgba(212, 175, 55, 0.2), transparent 60%);
+    z-index: -1;
+}
+.hero-section::after {
+    content: '';
+    position: absolute;
+    bottom: -140px;
+    left: -160px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, rgba(21, 115, 71, 0.16), transparent 60%);
+    z-index: -1;
+}
+
+.hero-title {
+    font-size: clamp(2.4rem, 4vw, 3rem);
+    font-weight: 800;
+    background: linear-gradient(to right, #16a34a, #0ea5e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+[data-theme="dark"] .hero-title {
+    background: linear-gradient(to right, #22c55e, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: clamp(1.7rem, 3vw, 2.2rem);
+    font-weight: 700;
+    color: var(--primary-green);
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+[data-theme="dark"] .hero-subtitle {
+    color: #e5e7eb;
+}
+.hero-subtitle::after {
+    content: '';
+    display: block;
+    width: 65%;
+    height: 3px;
+    background: linear-gradient(to right, var(--accent-gold), transparent);
+    margin: 8px auto 0;
+    border-radius: 999px;
+}
+.hero-text-muted {
+    color: var(--text-muted);
+    max-width: 480px;
+}
+
+.hero-badge {
+    background: var(--badge-bg);
+    color: var(--badge-text);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+[data-theme="dark"] .hero-badge {
+    box-shadow: 0 12px 36px rgba(0,0,0,0.65);
+}
+
+.poster-wrapper {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.poster-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: -10px;
+    border-radius: 24px;
+    background:
+        conic-gradient(from 180deg at 50% 50%, rgba(34,197,94,0.4), transparent 40%, rgba(56,189,248,0.5), transparent 80%);
+    opacity: 0.75;
+    filter: blur(18px);
+    z-index: -1;
+}
+.poster-wrapper:hover {
+    transform: translateY(-8px) scale(1.01);
+}
+
+.poster-card {
+    border-radius: 22px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.5);
+    background: linear-gradient(135deg, rgba(255,255,255,0.85), rgba(248,250,252,0.9));
+    box-shadow: var(--shadow-hero);
+}
+[data-theme="dark"] .poster-card {
+    background: radial-gradient(circle at top left, rgba(30,64,175,0.5), rgba(15,23,42,0.95));
+    border-color: rgba(148,163,184,0.5);
+}
+
+.poster-img {
+    width: 100%;
+    display: block;
+}
+
+.floating-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: rgba(10,54,34,0.92);
+    color: #fff;
+    padding: 7px 13px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(252, 211, 77, 0.6);
+}
+.floating-badge i {
+    color: var(--accent-gold);
+}
+
+.info-pill {
+    background: var(--glass-bg);
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-main);
+    transition: all 0.25s;
+    border: 1px solid var(--border-subtle);
+    backdrop-filter: blur(var(--glass-blur));
+}
+.info-pill i {
+    color: var(--primary-green);
+}
+[data-theme="dark"] .info-pill {
+    box-shadow: 0 16px 40px rgba(0,0,0,0.7);
+}
+.info-pill:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(15, 23, 42, 0.2);
+    border-color: rgba(34,197,94,0.7);
+}
+
+/* =========================
+   5. COUNTDOWN SECTION
+=========================*/
+.countdown-section {
+    background: radial-gradient(circle at top, rgba(16,185,129,0.08), transparent 55%),
+                var(--bg-soft);
+}
+[data-theme="dark"] .countdown-section {
+    background: radial-gradient(circle at top, rgba(56,189,248,0.16), transparent 60%),
+                #020617;
+}
+.countdown-container {
+    background: var(--glass-bg);
+    padding: 30px 22px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-soft);
+    position: relative;
+    overflow: hidden;
+    border-top: 4px solid var(--primary-green);
+    backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+}
+.countdown-container::before {
+    content: 'Event';
+    position: absolute;
+    right: -10px;
+    bottom: -18px;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: rgba(0,0,0,0.04);
+    text-transform: uppercase;
+}
+[data-theme="dark"] .countdown-container::before {
+    color: rgba(148,163,184,0.08);
+}
+
+.timer-box {
+    background: radial-gradient(circle at top left, #16a34a, #0b3d26);
+    color: #fff;
+    width: 80px;
+    height: 86px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+    box-shadow: 0 10px 24px rgba(21, 115, 71, 0.6);
+    position: relative;
+}
+.timer-val {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1;
+}
+.timer-label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    opacity: 0.92;
+    margin-top: 5px;
+}
+
+/* =========================
+   6. BUTTONS
+=========================*/
+.btn-custom {
+    padding: 12px 32px;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: all 0.3s;
+    letter-spacing: 0.5px;
+    font-size: 0.95rem;
+    position: relative;
+    overflow: hidden;
+}
+.btn-custom::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.25),
+        rgba(255, 255, 255, 0)
+    );
+    transform: skewX(-20deg);
+    transition: left 0.45s;
+}
+.btn-custom:hover::after {
+    left: 130%;
+}
+.btn-register {
+    background: linear-gradient(135deg, #16a34a, #0f766e);
+    color: white;
+    border: none;
+    box-shadow: 0 14px 35px rgba(16, 185, 129, 0.55);
+}
+.btn-register:hover {
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: 0 18px 45px rgba(16, 185, 129, 0.7);
+    color: white;
+}
+.btn-outline-custom {
+    background: transparent;
+    color: var(--primary-green);
+    border: 1.5px solid rgba(34,197,94,0.7);
+}
+[data-theme="dark"] .btn-outline-custom {
+    color: #e5e7eb;
+    border-color: rgba(148,163,184,0.7);
+}
+.btn-outline-custom:hover {
+    background: rgba(16,185,129,0.12);
+    transform: translateY(-3px);
+}
+
+/* =========================
+   7. SECTION HEADERS
+=========================*/
+.section-header {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 32px;
+}
+.section-header h2 {
+    font-weight: 800;
+    color: var(--text-main);
+}
+.section-header::after {
+    content: '';
+    display: block;
+    width: 68px;
+    height: 3px;
+    background: linear-gradient(to right, var(--primary-green), var(--accent-gold));
+    margin: 10px auto;
+    border-radius: 999px;
+}
+.section-subtitle {
+    max-width: 620px;
+    margin: 0 auto 15px;
+    color: var(--text-muted);
+    font-size: 0.98rem;
+}
+
+/* =========================
+   8. FEATURE CARDS
+=========================*/
+.feature-card {
+    background: var(--glass-bg);
+    border-radius: 16px;
+    padding: 26px 20px;
+    transition: all 0.25s ease;
+    border: 1px solid var(--border-subtle);
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(var(--glass-blur));
+}
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle at center, rgba(21,115,71,0.2), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.feature-card:hover::before {
+    opacity: 1;
+}
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-soft);
+    border-color: rgba(34,197,94,0.65);
+}
+
+.feature-icon-box {
+    width: 70px;
+    height: 70px;
+    background: rgba(22,163,74,0.08);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    font-size: 1.8rem;
+    color: var(--primary-green);
+    transition: 0.25s;
+}
+[data-theme="dark"] .feature-icon-box {
+    background: rgba(15,23,42,0.9);
+    border: 1px solid rgba(34,197,94,0.4);
+    color: #22c55e;
+}
+.feature-card:hover .feature-icon-box {
+    background: var(--primary-green);
+    color: #fff;
+}
+[data-theme="dark"] .feature-card:hover .feature-icon-box {
+    background: #22c55e;
+    color: #0f172a;
+}
+
+/* =========================
+   9. SPEAKERS
+=========================*/
+.speaker-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(255,255,255,0.9);
+    box-shadow: 0 14px 26px rgba(15,23,42,0.45);
+}
+[data-theme="dark"] .speaker-img {
+    border-color: rgba(15,23,42,0.9);
+}
+.speaker-role {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #15803d;
+}
+[data-theme="dark"] .speaker-role {
+    color: #22c55e;
+}
+
+/* =========================
+   10. BLOG
+=========================*/
+.blog-card {
+    border-radius: 16px;
+    background: var(--glass-bg);
+    border: 1px solid var(--border-subtle);
+    padding: 18px 18px 20px;
+    transition: 0.25s;
+    height: 100%;
+    backdrop-filter: blur(var(--glass-blur));
+}
+.blog-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-soft);
+    border-color: rgba(34,197,94,0.7);
+}
+.blog-tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #15803d;
+    background: rgba(34,197,94,0.12);
+    display: inline-block;
+    padding: 4px 9px;
+    border-radius: 999px;
+}
+[data-theme="dark"] .blog-tag {
+    color: #bbf7d0;
+    background: rgba(22,163,74,0.16);
+}
+
+/* =========================
+   11. REGISTER SECTION
+=========================*/
+.register-section {
+    background: radial-gradient(circle at top, rgba(16,185,129,0.08), transparent 60%),
+                var(--bg-soft);
+}
+[data-theme="dark"] .register-section {
+    background: radial-gradient(circle at 20% 0%, rgba(56,189,248,0.16), transparent 60%),
+                #020617;
+}
+.register-card {
+    background:
+        radial-gradient(circle at top left, rgba(212,175,55,0.16), transparent 60%),
+        radial-gradient(circle at bottom right, rgba(16,185,129,0.16), transparent 60%),
+        var(--glass-bg);
+    border-radius: 20px;
+    padding: 26px 22px;
+    box-shadow: var(--shadow-soft);
+    border-top: 4px solid var(--primary-green);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(var(--glass-blur));
+}
+.register-note {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* =========================
+   12. PRAYER SECTION
+=========================*/
+.prayer-section {
+    background: linear-gradient(135deg, #15803d, #0f766e);
+    padding: 60px 0;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+[data-theme="dark"] .prayer-section {
+    background: radial-gradient(circle at top, rgba(56,189,248,0.25), transparent 60%),
+                linear-gradient(135deg, #020617, #0f172a);
+}
+.prayer-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("https://i.ibb.co/DQ5q3PK/pattern.png");
+    opacity: var(--pattern-opacity);
+    mix-blend-mode: soft-light;
+    pointer-events: none;
+}
+.prayer-box {
+    background: rgba(255,255,255,0.09);
+    backdrop-filter: blur(7px);
+    border-radius: 12px;
+    padding: 15px 20px;
+    min-width: 130px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.26);
+    transition: 0.25s;
+}
+.prayer-box:hover {
+    background: rgba(255,255,255,0.22);
+    transform: translateY(-5px);
+}
+.prayer-time {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+/* =========================
+   13. FOOTER
+=========================*/
+.main-footer {
+    background: #0a3622;
+    color: #d1e7dd;
+    padding: 60px 0 20px;
+    border-top: 4px solid var(--accent-gold);
+}
+[data-theme="dark"] .main-footer {
+    background: #020617;
+    border-top-color: rgba(234,179,8,0.7);
+}
+.social-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: 10px;
+    transition: 0.25s;
+    text-decoration: none;
+}
+.social-btn:hover {
+    background: var(--primary-green);
+    transform: translateY(-2px) scale(1.05);
+    color: white;
+}
+.hover-white:hover {
+    color: #fff !important;
+}
+
+/* =========================
+   14. REVEAL ANIMATION
+=========================*/
+.reveal {
+    opacity: 0;
+    transform: translateY(26px);
+    transition: all 0.8s ease-out;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================
+   15. RESPONSIVE
+=========================*/
+@media (max-width: 991.98px) {
+    .hero-section {
+        padding-top: 110px;
+    }
+    .poster-wrapper {
+        margin-top: 24px;
+    }
+    .countdown-container {
+        padding: 24px 16px;
+    }
+}
+@media (max-width: 575.98px) {
+    .timer-box {
+        width: 70px;
+        height: 78px;
+    }
+    .timer-val {
+        font-size: 1.7rem;
+    }
+    .info-pill {
+        font-size: 0.86rem;
+        padding-inline: 16px;
+    }
+    .theme-toggle-btn {
+        margin-left: 8px;
+    }
+}
+    </style>
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+                <div class="bg-success rounded p-2 shadow-sm">
+                    <i class="fa-solid fa-mosque text-white fa-lg"></i>
+                </div>
+                <div class="d-flex flex-column">
+                    <span class="fw-bold fs-5 lh-1">খিলক্ষেত মুসলিম সোসাইটি</span>
+                    <small style="font-size: 0.7rem;">এক উম্মাহ এক দেহ</small>
+                </div>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mt-2 mt-lg-0" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="#home">হোম</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">আমাদের সম্পর্কে</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#speakers">আলোচকবৃন্দ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">পোস্ট</a></li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <a class="nav-link btn btn-success text-white px-4 shadow-sm" href="#register" style="border-radius: 999px;">
+                            রেজিস্ট্রেশন
+                        </a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center mt-2 mt-lg-0">
+                        <!-- Theme Toggle -->
+                        <button id="themeToggle" class="theme-toggle-btn" type="button" aria-label="Theme Toggle">
+                            <i class="fa-regular fa-moon" id="themeIcon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero-section">
+        <div class="hero-gradient-orbit"></div>
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0 reveal">
+                    <span class="hero-badge mb-3">
+                        <i class="fa-solid fa-bolt"></i> রেজিস্ট্রেশন চলছে
+                    </span>
+                    <h1 class="hero-title">ইয়ুথ রিভাইভাল কল</h1>
+                    <div class="hero-subtitle">ওয়ে টু জান্নাহ</div>
+                    <p class="mt-3 mb-4">
+                        তরুণদের জন্য হৃদয় জাগানো এক আধ্যাত্মিক আয়োজন, যেখানে থাকবে ঈমান, আক্বীদা, আখলাক ও বাস্তব জীবনঘনিষ্ঠ আলোচনার সমন্বয়।
+                    </p>
+
+                    <div class="d-flex justify-content-center justify-content-lg-start flex-wrap gap-3">
+                        <div class="info-pill">
+                            <i class="fa-regular fa-calendar-check me-2"></i>১৩ই ডিসেম্বর, ২০২৫
+                        </div>
+                        <div class="info-pill">
+                            <i class="fa-regular fa-clock me-2"></i>সকাল ৯:০০ টা
+                        </div>
+                        <div class="info-pill">
+                            <i class="fa-solid fa-map-location-dot me-2"></i>গ্রিন পার্ক, খিলক্ষেত
+                        </div>
+                    </div>
+
+                    <div class="mt-4 d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#register" class="btn btn-custom btn-register">
+                            এখনই রেজিস্ট্রেশন করুন <i class="fa-solid fa-arrow-right ms-2"></i>
+                        </a>
+                        <a href="#about" class="btn btn-custom btn-outline-custom">
+                            বিস্তারিত জানুন
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-8 reveal">
+                    <div class="poster-wrapper">
+                        <span class="floating-badge">
+                            <i class="fa-solid fa-star"></i> বিশেষ যুবকেন্দ্রিক ইভেন্ট
+                        </span>
+                        <div class="poster-card mt-4 mt-lg-0">
+                            <img src="https://khilkhetmuslimsociety.netlify.app/assets/event-poster-C4OqK96j.png" alt="Event Poster" class="poster-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="py-5 countdown-section">
+        <div class="container text-center">
+            <div class="row justify-content-center reveal">
+                <div class="col-lg-9">
+                    <div class="countdown-container">
+                        <h5 class="mb-2 fw-bold">ইভেন্ট শুরু হতে বাকি</h5>
+                        <p class="small mb-4">
+                            ইন শা আল্লাহ, সময়মতো উপস্থিত হতে আজই আপনার পরিকল্পনা সেরে ফেলুন।
+                        </p>
+                        <div class="d-flex justify-content-center flex-wrap mb-3" id="countdown-timer">
+                            <div class="timer-box">
+                                <span class="timer-val" id="days">00</span>
+                                <span class="timer-label">দিন</span>
+                            </div>
+                            <div class="timer-box">
+                                <span class="timer-val" id="hours">00</span>
+                                <span class="timer-label">ঘণ্টা</span>
+                            </div>
+                            <div class="timer-box">
+                                <span class="timer-val" id="minutes">00</span>
+                                <span class="timer-label">মিনিট</span>
+                            </div>
+                            <div class="timer-box">
+                                <span class="timer-val" id="seconds">00</span>
+                                <span class="timer-label">সেকেন্ড</span>
+                            </div>
+                        </div>
+                        <p class="text-danger small mt-1 mb-0 fw-bold">
+                            <i class="fa-solid fa-triangle-exclamation me-1"></i>
+                            আসন সংখ্যা সীমিত! আপনার আসনটি দ্রুত নিশ্চিত করুন।
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-5" style="background: transparent;">
+        <div class="container">
+            <div class="text-center reveal">
+                <div class="section-header">
+                    <h2>আমাদের সম্পর্কে</h2>
+                </div>
+                <p class="section-subtitle">
+                    খিলক্ষেত মুসলিম সোসাইটি একটি অরাজনৈতিক দ্বীনি সংগঠন। কুরআন ও সহীহ সুন্নাহর আলোকে জীবন গড়া এবং সমাজের সর্বস্তরে দ্বীনের দাওয়াত পৌঁছে দেয়াই আমাদের লক্ষ্য।
+                </p>
+            </div>
+
+            <div class="row justify-content-center mt-3 reveal">
+                <div class="col-lg-8 text-center lh-lg fs-6">
+                    <p>
+                        আমরা যুবসমাজকে নৈতিক অবক্ষয় থেকে রক্ষা করে আদর্শ মানুষ হিসেবে গড়ে তুলতে বদ্ধপরিকর।
+                        নামাজ প্রতিষ্ঠা, আক্বীদা সংশোধন, চরিত্র গঠন ও সামগ্রিক দ্বীনি শিক্ষা – সব কিছু নিয়েই আমাদের কার্যক্রম।
+                        সমাজের প্রতিটি স্তরে সুন্নাহর আলো পৌঁছে দিতে আমরা একটি সম্মিলিত প্ল্যাটফর্ম হিসেবে কাজ করছি।
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-4 reveal">
+                <div class="col-md-3 col-6">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-kaaba"></i>
+                        </div>
+                        <h5 class="fw-bold">তাওহীদ</h5>
+                        <p class="small mb-0">আল্লাহর একত্ববাদ প্রতিষ্ঠা</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-users-line"></i>
+                        </div>
+                        <h5 class="fw-bold">উম্মাহ</h5>
+                        <p class="small mb-0">ভ্রাতৃত্ববোধ ও ঐক্য</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                        </div>
+                        <h5 class="fw-bold">খিদমত</h5>
+                        <p class="small mb-0">মানবসেবা ও সহযোগিতা</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon-box">
+                            <i class="fa-solid fa-book-quran"></i>
+                        </div>
+                        <h5 class="fw-bold">দাওয়াহ</h5>
+                        <p class="small mb-0">বিশুদ্ধ দ্বীনের প্রচার</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPEAKERS -->
+    <section id="speakers" class="py-5" style="background-color: transparent;">
+        <div class="container">
+            <div class="text-center reveal">
+                <div class="section-header">
+                    <h2>সম্মানিত আলোচকবৃন্দ</h2>
+                </div>
+                <p class="section-subtitle">
+                    দ্বীনি জ্ঞানে সমৃদ্ধ ও অভিজ্ঞ আলেম ও বক্তারা পুরো প্রোগ্রাম জুড়ে চিন্তাজাগানো আলোচনা ও জীবনঘনিষ্ঠ নসীহা উপস্থাপন করবেন।
+                </p>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-4 justify-content-center reveal">
+                <div class="col">
+                    <div class="feature-card text-center p-4">
+                        <img src="https://ui-avatars.com/api/?name=Mufti+Tariq&background=157347&color=fff&size=128" class="speaker-img mb-3" alt="Speaker">
+                        <div class="speaker-role mb-1">প্রধান আলোচক</div>
+                        <h5 class="fw-bold mb-1">মুফতি তারিকুজ্জামান</h5>
+                        <p class="small mb-0">বিশিষ্ট ইসলামি চিন্তাবিদ ও গবেষক</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="feature-card text-center p-4">
+                        <img src="https://ui-avatars.com/api/?name=Saleh+Ahmed&background=157347&color=fff&size=128" class="speaker-img mb-3" alt="Speaker">
+                        <span class="badge bg-success bg-opacity-10 text-success mb-1">মোটিভেশনাল স্পিকার</span>
+                        <h5 class="fw-bold mb-1 mt-1">সালেহ আহমেদ তোহা</h5>
+                        <p class="small mb-0">তরুণদের মাঝে জনপ্রিয় বক্তা, দাওয়াহ কর্মী</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="feature-card text-center p-4">
+                        <img src="https://ui-avatars.com/api/?name=Mawlana+Hussain&background=157347&color=fff&size=128" class="speaker-img mb-3" alt="Speaker">
+                        <span class="badge bg-success bg-opacity-10 text-success mb-1">খতিব ও মুহাদ্দিস</span>
+                        <h5 class="fw-bold mb-1 mt-1">মাওলানা হুসাইন আহমাদ</h5>
+                        <p class="small mb-0">মসজিদ ও মাদরাসা শিক্ষক, হাদীস বিশারদ</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="feature-card text-center p-4">
+                        <img src="https://ui-avatars.com/api/?name=Ahmad+Rafiq&background=157347&color=fff&size=128" class="speaker-img mb-3" alt="Speaker">
+                        <span class="badge bg-success bg-opacity-10 text-success mb-1">বিশেষ অতিথি</span>
+                        <h5 class="fw-bold mb-1 mt-1">আহমেদ রফিক</h5>
+                        <p class="small mb-0">শিক্ষাবিদ ও সমাজকর্মী</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG / POSTS -->
+    <section id="blog" class="py-5">
+        <div class="container">
+            <div class="text-center reveal">
+                <div class="section-header">
+                    <h2>সাম্প্রতিক আপডেট ও পোস্ট</h2>
+                </div>
+                <p class="section-subtitle">
+                    ইভেন্ট, প্রস্তুতি ও দ্বীনি আলোচনা সংক্রান্ত কিছু গুরুত্বপূর্ণ পোস্ট ও খবর এক নজরে।
+                </p>
+            </div>
+
+            <div class="row g-4 reveal">
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <span class="blog-tag mb-2">ঘোষণা</span>
+                        <h5 class="mt-2 mb-2">রেজিস্ট্রেশন ফ্রি, তবে আসন সীমিত</h5>
+                        <p class="small mb-2">
+                            ইন শা আল্লাহ, পুরো প্রোগ্রামে অংশগ্রহণ ফ্রি। তবে আগাম নিবন্ধন ছাড়া কাউকে প্রবেশের সুযোগ দেয়া নাও যেতে পারে, তাই এখনই ফর্ম পূরণ করে ফেলুন।
+                        </p>
+                        <p class="small mb-0">
+                            <i class="fa-regular fa-calendar me-1"></i> আপডেট: ডিসেম্বর ২০২৫
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <span class="blog-tag mb-2">প্রোগ্রাম হাইলাইটস</span>
+                        <h5 class="mt-2 mb-2">ইমান, আক্বীদা ও যুবকের জীবন</h5>
+                        <p class="small mb-2">
+                            তরুণ জীবনে যে সব ফিতনা ও বিভ্রান্তি আসে, সেগুলো থেকে কীভাবে বাঁচবে – আলোচনায় থাকবে বাস্তব উদাহরণভিত্তিক করণীয় ও নসীহা।
+                        </p>
+                        <p class="small mb-0">
+                            <i class="fa-solid fa-clock me-1"></i> আনুমানিক সময়: সকাল ৯টা – দুপুর ১টা
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <span class="blog-tag mb-2">অনুরোধ</span>
+                        <h5 class="mt-2 mb-2">সময়মতো উপস্থিত হওয়ার অনুরোধ</h5>
+                        <p class="small mb-2">
+                            সবাইকে নির্ধারিত সময়ের অন্তত ৩০ মিনিট আগে উপস্থিত হওয়ার অনুরোধ রইলো, যেন সুশৃঙ্খল পরিবেশ বজায় থাকে এবং শুরু থেকে সম্পূর্ণ প্রোগ্রাম উপভোগ করতে পারেন।
+                        </p>
+                        <p class="small mb-0">
+                            <i class="fa-solid fa-location-dot me-1"></i> ভেন্যু: গ্রিন পার্ক, খিলক্ষেত
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REGISTER -->
+    <section id="register" class="py-5 register-section">
+        <div class="container">
+            <div class="row justify-content-center align-items-center g-4">
+                <div class="col-lg-6 reveal">
+                    <div class="section-header text-center text-lg-start mb-3 mb-lg-2">
+                        <h2>রেজিস্ট্রেশন করুন</h2>
+                    </div>
+                    <p class="section-subtitle text-center text-lg-start mb-3">
+                        নিচের বাটনে ক্লিক করে সহজেই গুগল ফর্মের মাধ্যমে আপনার নাম, মোবাইল নম্বর ও প্রয়োজনীয় তথ্য জমা দিন।
+                    </p>
+                    <div class="register-card">
+                        <h5 class="fw-bold mb-2">
+                            <i class="fa-regular fa-clipboard me-1 text-success"></i>
+                            অনলাইন রেজিস্ট্রেশন ফর্ম
+                        </h5>
+                        <p class="register-note mb-3">
+                            ফর্মটি পূরণ করে সাবমিট করলেই আপনার রেজিস্ট্রেশন প্রাথমিকভাবে কনফার্ম হয়ে যাবে। পরবর্তী আপডেট SMS/কলের মাধ্যমে জানানো হবে ইন শা আল্লাহ।
+                        </p>
+                        <!-- 👉 এখানে আপনার Google Form লিংকটি বসান -->
+                        <a href="https://docs.google.com/forms/d/your-form-id/viewform"
+                           target="_blank"
+                           class="btn btn-custom btn-register d-inline-flex align-items-center">
+                            ফর্ম ওপেন করুন <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i>
+                        </a>
+                        <p class="small mt-3 mb-0">
+                            <i class="fa-solid fa-circle-info me-1"></i>
+                            যদি ফর্ম ওপেন না হয়, অনুগ্রহ করে কিছুক্ষণ পর আবার চেষ্টা করুন অথবা আয়োজক দলের নম্বরে যোগাযোগ করুন।
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-8 reveal">
+                    <div class="feature-card h-100">
+                        <h5 class="fw-bold mb-3">
+                            কেন এই প্রোগ্রামে যোগ দেবেন?
+                        </h5>
+                        <ul class="list-unstyled small mb-0">
+                            <li class="mb-2">
+                                <i class="fa-solid fa-check-circle text-success me-1"></i>
+                                জীবনের উদ্দেশ্য, লক্ষ্য ও দিশা সম্পর্কে পরিষ্কার ধারণা পেতে।
+                            </li>
+                            <li class="mb-2">
+                                <i class="fa-solid fa-check-circle text-success me-1"></i>
+                                আল্লাহভীতিসম্পন্ন ও দ্বীনদার বন্ধু-মহল তৈরি করতে।
+                            </li>
+                            <li class="mb-2">
+                                <i class="fa-solid fa-check-circle text-success me-1"></i>
+                                বাস্তব অভিজ্ঞতার আলোকে প্রজ্ঞাময় দ্বীনি পরামর্শ শুনতে।
+                            </li>
+                            <li class="mb-0">
+                                <i class="fa-solid fa-check-circle text-success me-1"></i>
+                                দুনিয়া ও আখিরাত— দুই দিকেই সফল হওয়ার পথ শিখতে, ইন শা আল্লাহ।
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRAYER TIMES -->
+    <section id="prayer" class="prayer-section">
+        <div class="container text-center reveal">
+            <h3 class="fw-bold mb-2"><i class="fa-solid fa-clock me-2"></i>নামাজের সময়সূচী</h3>
+            <p class="mb-5 text-white-50" id="current-date-display">লোডিং তারিখ...</p>
+
+            <div class="d-flex flex-wrap justify-content-center gap-3" id="prayer-times-container">
+                <!-- আপাতত স্ট্যাটিক সময়; পরে চাইলে API ভিত্তিক করা যাবে -->
+                <div class="prayer-box">
+                    <div class="small text-uppercase opacity-75">ফজর</div>
+                    <div class="prayer-time">০৫:১০</div>
+                </div>
+                <div class="prayer-box">
+                    <div class="small text-uppercase opacity-75">যোহর</div>
+                    <div class="prayer-time">১২:০০</div>
+                </div>
+                <div class="prayer-box">
+                    <div class="small text-uppercase opacity-75">আসর</div>
+                    <div class="prayer-time">০৩:৪৫</div>
+                </div>
+                <div class="prayer-box">
+                    <div class="small text-uppercase opacity-75">মাগরিব</div>
+                    <div class="prayer-time">০৫:২০</div>
+                </div>
+                <div class="prayer-box">
+                    <div class="small text-uppercase opacity-75">এশা</div>
+                    <div class="prayer-time">০৬:৪০</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <div class="bg-white rounded p-1">
+                            <i class="fa-solid fa-mosque text-success fs-4"></i>
+                        </div>
+                        <h4 class="mb-0 fw-bold text-white">কেএমএস</h4>
+                    </div>
+                    <p class="small text-white-50">
+                        আল্লাহর সন্তুষ্টি অর্জনের লক্ষ্যে আমাদের পথচলা। দ্বীনের আলো ছড়িয়ে দিতে আমরা সর্বদা সচেষ্ট।
+                    </p>
+                    <div class="mt-3">
+                        <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold text-white mb-3 border-bottom d-inline-block pb-1 border-warning">যোগাযোগ</h5>
+                    <p class="small mb-2"><i class="fa-solid fa-phone me-2 text-warning"></i> +৮৮০ ১২৩৪ ৫৬৭৮৯০</p>
+                    <p class="small mb-2"><i class="fa-solid fa-envelope me-2 text-warning"></i> info@kms-bd.org</p>
+                    <p class="small mb-0">
+                        <i class="fa-solid fa-location-dot me-2 text-warning"></i>
+                        মোহাম্মদী হাউজিং, খিলক্ষেত, ঢাকা
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold text-white mb-3 border-bottom d-inline-block pb-1 border-warning">দ্রুত লিংক</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-white-50 text-decoration-none mb-1 d-block hover-white">প্রাইভেসী পলিসি</a></li>
+                        <li><a href="#register" class="text-white-50 text-decoration-none mb-1 d-block hover-white">ডোনেশন</a></li>
+                        <li><a href="#register" class="text-white-50 text-decoration-none d-block hover-white">সদস্য হোন</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-5 pt-3 border-top border-secondary">
+                <small class="text-white-50">&copy; ২০২৫ খিলক্ষেত মুসলিম সোসাইটি | সর্বস্বত্ব সংরক্ষিত</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // =========================
+// 1. THEME TOGGLE (LIGHT / DARK)
+// =========================
+const THEME_KEY = 'kms_theme';
+const root = document.documentElement;
+const themeToggleBtn = document.getElementById('themeToggle');
+const themeIcon = document.getElementById('themeIcon');
+
+function applyTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    if (theme === 'dark') {
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+    } else {
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+    }
+}
+
+function getPreferredTheme() {
+    const saved = localStorage.getItem(THEME_KEY);
+    if (saved === 'light' || saved === 'dark') return saved;
+    // fallback: use system preference
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    return prefersDark ? 'dark' : 'light';
+}
+
+// Initial theme
+applyTheme(getPreferredTheme());
+
+themeToggleBtn.addEventListener('click', () => {
+    const current = root.getAttribute('data-theme') || 'light';
+    const next = current === 'light' ? 'dark' : 'light';
+    applyTheme(next);
+    localStorage.setItem(THEME_KEY, next);
+});
+
+// =========================
+// 2. COUNTDOWN TIMER
+// =========================
+const eventDate = new Date("Dec 13, 2025 09:00:00").getTime();
+const updateTimer = setInterval(function() {
+    const now = new Date().getTime();
+    const distance = eventDate - now;
+
+    if (distance < 0) {
+        clearInterval(updateTimer);
+        const timerEl = document.getElementById("countdown-timer");
+        if (timerEl) {
+            timerEl.innerHTML = "<h3 class='text-success fw-bold mb-0'>আলহামদুলিল্লাহ! ইভেন্ট শুরু হয়েছে।</h3>";
+        }
+        return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerText = String(days).padStart(2, '0');
+    document.getElementById("hours").innerText = String(hours).padStart(2, '0');
+    document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
+    document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+}, 1000);
+
+// =========================
+// 3. NAVBAR SCROLL + ACTIVE LINK
+// =========================
+const navbar = document.getElementById('mainNav');
+const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+
+    let fromTop = window.scrollY + 120;
+    navLinks.forEach(link => {
+        const section = document.querySelector(link.getAttribute('href'));
+        if (!section) return;
+        if (
+            section.offsetTop <= fromTop &&
+            section.offsetTop + section.offsetHeight > fromTop
+        ) {
+            navLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+        }
+    });
+});
+
+// Close navbar on link click (mobile)
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const navbarCollapse = document.querySelector('#navbarNav');
+        if (navbarToggler && navbarCollapse.classList.contains('show')) {
+            navbarToggler.click();
+        }
+    });
+});
+
+// =========================
+// 4. REVEAL ON SCROLL
+// =========================
+function reveal() {
+    const reveals = document.querySelectorAll(".reveal");
+    const windowHeight = window.innerHeight;
+    const elementVisible = 120;
+
+    reveals.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+        if (elementTop < windowHeight - elementVisible) {
+            el.classList.add("active");
+        }
+    });
+}
+window.addEventListener("scroll", reveal);
+reveal(); // initial
+
+// =========================
+// 5. PRAYER DATE DISPLAY
+// =========================
+const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+const today = new Date();
+const formattedDate = today.toLocaleDateString('bn-BD', dateOptions);
+const dateDisplayEl = document.getElementById('current-date-display');
+if (dateDisplayEl) {
+    dateDisplayEl.innerHTML = `<i class="fa-solid fa-calendar-day me-2"></i> ${formattedDate} | ঢাকা, বাংলাদেশ`;
+}
+    </script>
+</body>
+</html>
